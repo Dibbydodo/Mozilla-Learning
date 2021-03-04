@@ -101,12 +101,13 @@
       <h1>Mozilla</h1>
       <!-- insert <img> element, link to the small
           version of the Firefox logo -->
-
+        <img src="firefox_logo-only_RGB120.png" alt="Firefox Logo">
     </header>
 
     <main>
       <article>
         <!-- insert iframe from youtube -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ojcNcvb1olg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         <h2>Rocking the free web</h2>
 
@@ -118,22 +119,27 @@
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img>
+          <img srcset="firefox_logo-only_RGB120.png 120w, firefox_logo-only_RGB400.png 400w" sizes="(max-width: 500px) 120px, 800px" src="firefox_logo-only_RGB400.png">
         </a>
         <a href="https://www.mozilla.org/">
-          <img>
+          <img srcset="mozilla-dinosaur-head120.png 120w, mozilla-dinosaur-head400.png 400w" sizes="(max-width: 500px) 120px, 800px" src="mozilla-dinosaur-head400.png">
         </a>
         <a href="https://addons.mozilla.org/">
-          <img>
+          <img srcset="firefox-addons120.jpg 120w, firefox-addons400.jpg 400w" sizes="(max-width: 500px) 120px, 800px" src="firefox-addons400.jpg">
         </a>
         <a href="https://developer.mozilla.org/en-US/">
-          <img>
+          <img srcset="mdn.svg 400w, mdn.svg 120w" sizes="(max-width: 500px) 120px, 800px" src="mdn.svg">
         </a>
         <div class="clearfix"></div>
       </div>
 
       <div class="red-panda">
         <!-- insert picture element -->
+        <picture>
+            <source media="(max-width: 600px)" srcset="red-panda600.png">
+            <source media="(min-width: 601px)" srcset="red-panda1200.png">
+            <img src="elva-800w.jpg" alt="Chris standing up holding his daughter Elva">
+        </picture>
       </div>
 
     </main>
