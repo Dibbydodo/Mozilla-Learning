@@ -1,47 +1,49 @@
 h1 {
-    color: red;
-  }
-
-  p, li {
-    color: green;
+  color: red;
 }
+
+p,
 li {
-    list-style-type: none;
-  }
+  color: green;
+}
 
-  li.special, 
-  span.special {
-    color: orange;
-    font-weight: bold;
-  }
+li {
+  list-style-type: none;
+}
 
-  li em {
-    color: rebeccapurple;
-  }
+li.special,
+span.special {
+  color: orange;
+  font-weight: bold;
+}
 
-  h1 + p {
-      font-size: 200%;
-  }
+li em {
+  color: rebeccapurple;
+}
+
+h1+p {
+  font-size: 200%;
+}
 
 p span {
-    color: red;
+  color: red;
 }
 
 a:link {
-    color: blue;
-    font-weight: bold;
-  }
-  
-  a:visited {
-    color: green;
-  }
+  color: blue;
+  font-weight: bold;
+}
 
-  a:hover {
-    text-decoration: none;
-  }
+a:visited {
+  color: green;
+}
 
-  body h1 + p .special {
-    color: yellow;
-    background-color: black;
-    padding: 5px;
-  }
+a:hover {
+  text-decoration: none;
+}
+
+body h1+p .special {
+  color: yellow;
+  background-color: black;
+  padding: 5px;
+}
