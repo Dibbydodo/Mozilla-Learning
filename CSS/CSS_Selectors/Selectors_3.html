@@ -15,7 +15,18 @@
       * {
         box-sizing: border-box;
       }
+      
+      a{
+          color: orange;
+      }
 
+      a:visited{
+          color: green;
+      }
+
+      a:hover {
+          text-decoration: none;
+      }
       table {
         border-collapse: collapse;
         width: 300px;
@@ -25,6 +36,17 @@
       th {
         padding: 0.2em;
         text-align: left;
+      }
+      div p:first-child {
+        font-size: 150%;
+      }
+      div p:first-child::first-line {
+          color: red;
+      }
+
+      tr:nth-child(even) {
+          background-color: #333;
+          color: white;
       }
     </style>
 
