@@ -3,8 +3,20 @@
   <head>
     <meta charset="utf-8"/>
     <title>Selectors: Class and ID Selectors</title>
-    <link rel="stylesheet" href="../styles.css"/>
     <style>
+    .alert {
+          border-color:grey;
+          border-style: solid;
+          border-width: 1px;
+      }
+
+      .alert.stop {
+          background-color: red;
+      }
+
+      .alert.go {
+          background-color: green;
+      }
      body {
         background-color: #fff;
         color: #333;
@@ -12,6 +24,7 @@
         padding: 1em;
         margin: 0;
       }
+
       * {
         box-sizing: border-box;
       }
@@ -19,11 +32,6 @@
       #special {
           background-color: yellow;
       }
-
-      .alert {
-          border: grey 1px;
-      }
-
     </style>
 
   </head>
