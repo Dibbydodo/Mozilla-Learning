@@ -50,3 +50,16 @@ html {
   tfoot th {
     text-align: right;
   }
+
+  /* graphics and colors */
+
+thead, tfoot {
+    background: url(leopardskin.jpg);
+    color: white;
+    text-shadow: 1px 1px 1px black;
+  }
+  
+  thead th, tfoot th, tfoot td {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+    border: 3px solid purple;
+  }
