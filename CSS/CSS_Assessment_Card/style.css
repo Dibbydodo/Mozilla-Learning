@@ -1,0 +1,77 @@
+a/* General styles */
+
+body {
+  margin: 0px;
+}
+
+html {
+  font-family: 'Helvetica neue', Arial, 'sans serif';
+  font-size: 10px;
+  background-color: #ccc;
+}
+
+/* styles for card container */
+.card {
+  width: 25em;
+  height: 16em;
+  margin: 5em auto;
+  background-color: red;
+  border: 0.2em solid black;
+  border-radius: 1.5em;
+}
+
+/* styles for header */
+
+.card header {
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+  border-radius: 1.5em 1.5em 0 0;
+}
+
+/* styles for footer */
+
+.card footer {
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+  border-radius: 0 0 1.5em 1.5em;
+}
+
+/* styles for the image */
+ 
+.card article img {
+  max-height: 100%;
+  float: right;
+}
+
+/* others */
+
+.card header, footer {
+  height: 2em;
+  padding: 1.133em;
+}
+
+.card h2, p {
+  margin: 0px;
+}
+
+.card article {
+  height: 8em;
+}
+
+.card h2 {
+  font-size: 1.33em;
+  line-height: 1.33em;
+}
+
+.card footer p {
+  font-size: 1em;
+  line-height: 1em;
+}
+  
+.card article p {
+  padding-left: 1.3em;
+  background-color: rgb(66, 14, 9, 0.3);
+  color: white;
+}
+
+
+  
+  
