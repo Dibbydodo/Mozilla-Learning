@@ -3,3 +3,17 @@ html {
   }
   
   /* Your CSS below here */
+  p
+  {
+      width: 200px;
+      height: auto;
+      padding: 10px 0px;
+      text-align: center;
+      font-size: 1.2rem;
+      color: #86af49;
+      background-color: #86af49;
+      text-shadow: 0px 0px 2px black;
+      border-radius: 5px;
+      border: 2px solid  #637c3d;
+      box-shadow: 3px 3px 3px black, 0px 0px 0px 3px white;
+  }
