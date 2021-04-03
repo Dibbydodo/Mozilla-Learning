@@ -43,3 +43,101 @@
   }
   
   /* WRITE YOUR CODE BELOW HERE */
+
+  /* Font Styling and Typography */
+  * {
+    font-family: 'Oswald', sans-serif;
+    font-size: 10px;
+  }
+
+  body{
+    line-height: 3em;
+  }
+
+  h2 + p {
+    text-indent: 20px;
+  }
+
+  h1 {
+    font-size: 4em;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 1.75em;
+    font-weight: normal;
+  }
+
+  a {
+    font-size: 17.5px;
+  }
+
+  #list {
+    font-size: 15px;
+  }
+
+  /* Links */
+
+  a {
+    color: #b1945f; 
+  }
+
+  a:visited {
+    color: #634004;
+  }
+
+  a:focus {
+    text-decoration: none;
+    outline: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  a[href^="https"] {
+    background: url(external-link-52.png) no-repeat 100% 0;
+    background-size: 16px 16px;
+    padding-right: 19px;
+  }
+
+  /* Lists */
+
+  li {
+    line-height: 3em;
+  }
+
+  ul {
+    list-style-type: square;
+  }
+
+  nav li {
+    list-style-type: none;
+    padding: 1.25em;
+  }
+
+  nav li a {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  line-height: 3;
+  text-align: center;
+  font-size: 2.5rem;
+  border: 1px solid #a66;
+  }
+
+  ol li {
+    font-size: 1.75rem;
+  }
+
+  #list {
+    font-size: 1.75em;
+  }
