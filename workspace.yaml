@@ -1,5 +1,0 @@
-- name: Proof HTML
-  uses: anishathalye/proof-html@v1.1.0
-
-  - name: HTMLProofer
-  uses: chabad360/htmlproofer@v1.1
