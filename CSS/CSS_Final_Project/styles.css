@@ -49,3 +49,34 @@ body {
   .feature {
       width: 200px;
   }
+
+ ul {
+    display: flex;
+    justify-content:space-between;
+    list-style-type: none;
+  }
+
+  nav {
+      position: sticky;
+      top: 0;
+  }
+
+  .feature {
+      float: left;
+      padding: 20px;
+  }
+
+  .photos {
+      display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+  }
+
+.grid {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 980px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 20px;
+}
