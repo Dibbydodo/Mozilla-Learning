@@ -45,18 +45,23 @@
 
       // Your JavaScript goes here
 
+      // This is where the random number generation happens
       let randomNumber = Math.floor(Math.random() * 100) + 1;
 
+      // Variables set
       const guesses = document.querySelector('.guesses');
       const lastResult = document.querySelector('.lastResult');
       const lowOrHi = document.querySelector('.lowOrHi');
 
+      // More Variables
       const guessSubmit = document.querySelector('.guessSubmit');
       const guessField = document.querySelector('.guessField');
 
+      // Setting Values 
       let guessCount = 1;
       let resetButton;
 
+      // Function that checks the guess and sets out previous guesses
       function checkGuess() {
           let userGuess = Number(guessField.value);
           if (guessCount === 1) {
@@ -64,14 +69,17 @@
           }
           guesses.textContent += userGuess + ' ';
 
+          // Guessed number correctly
           if (userGuess === randomNumber) {
               lastResult.textContent = 'Congratulations! You got it right!';
               lastResult.style.backgroundColor = 'green';
               lowOrHi.textContent = ' ';
               setGameOver();
+              // Reached maximum guesses
           } else if (guessCount === 10) {
               lastResult.textContent = '!!!GAME OVER!!!';
               setGameOver();
+              // Wrong guesses, Too high or too low
           } else {
               lastResult.textContent = 'Wrong!';
               lastResult.style.backgroundColor = 'red';
@@ -82,13 +90,16 @@
               }
               }
 
+              // Resets field, add 1 to guess count, puts cursor in the guessing box 
               guessCount++;
               guessField.value = ' ';
               guessField.focus();
           }
 
+          // Listens for click
           guessSubmit.addEventListener('click', checkGuess);
 
+          // Function that resets the game at game over
           function setGameOver() {
               guessField.disabled = true;
               guessSubmit.disabled = true;
@@ -98,24 +109,25 @@
               resetButton.addEventListener('click', resetGame);
           }
 
+          // Resets the game to the beginning
           function resetGame() {
-  guessCount = 1;
+              guessCount = 1;
 
-  const resetParas = document.querySelectorAll('.resultParas p');
-  for (let i = 0 ; i < resetParas.length ; i++) {
-    resetParas[i].textContent = '';
-  }
+              const resetParas = document.querySelectorAll('.resultParas p');
+              for (let i = 0 ; i < resetParas.length ; i++) {
+                resetParas[i].textContent = '';
+              }
 
-  resetButton.parentNode.removeChild(resetButton);
+              resetButton.parentNode.removeChild(resetButton);
 
-  guessField.disabled = false;
-  guessSubmit.disabled = false;
-  guessField.value = '';
-  guessField.focus();
+              guessField.disabled = false;
+              guessSubmit.disabled = false;
+              guessField.value = '';
+              guessField.focus();
 
-  lastResult.style.backgroundColor = 'white';
+              lastResult.style.backgroundColor = 'white';
 
-  randomNumber = Math.floor(Math.random() * 100) + 1;
+              randomNumber = Math.floor(Math.random() * 100) + 1;
 }
     </script>
   </body>
