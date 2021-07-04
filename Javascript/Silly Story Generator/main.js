@@ -31,10 +31,10 @@ function result() {
   }
 
   if(document.getElementById("uk").checked) {
-    let weight = Math.round(21.4286) + " stones";
-    let temperature =  Math.round(34.4444) + " centigrade";
-    weight.replace("94 fahrenheit", weight);
-    temperature.replace("300 pounds", temperature);
+    const weight = Math.round(21.4286) + " stones";
+    const temperature =  Math.round(34.4444) + " centigrade";
+    newStory = newStory.replace("94 fahrenheit", weight);
+    newStory = newStory.replace("300 pounds", temperature);
   }
 
   story.textContent = newStory;
